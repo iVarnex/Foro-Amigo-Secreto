@@ -245,7 +245,18 @@ describe("capa de datos", { skip: SIN_BASE }, () => {
         contenido: "huérfano",
         codigoHash: "hash-de-prueba",
       }),
-      /violates foreign key constraint|comentarios_ficha_id_fichas_id_fk/,
+      (error: unknown) => {
+        const causa = error instanceof Error ? error.cause : undefined;
+        const mensaje =
+          causa instanceof Error
+            ? causa.message
+            : error instanceof Error
+              ? error.message
+              : String(error);
+        return /violates foreign key constraint|comentarios_ficha_id_fichas_id_fk/.test(
+          mensaje,
+        );
+      },
     );
   });
 
