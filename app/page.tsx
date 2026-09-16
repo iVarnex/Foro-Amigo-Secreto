@@ -20,7 +20,7 @@ export default async function Home() {
       <header className="flex flex-col gap-3">
         <div className="flex items-start justify-between gap-3">
           <h1 className="font-heading text-2xl font-semibold">
-            🎁 Amigo Secreto
+            🍬 Amigo Dulce
           </h1>
           <ThemeToggle />
         </div>

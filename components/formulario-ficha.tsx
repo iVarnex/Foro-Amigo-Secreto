@@ -86,7 +86,7 @@ export function FormularioFicha() {
             name="gustos"
             required
             maxLength={1000}
-            placeholder="Café, libros de misterio, plantas…"
+            placeholder="Chocolate amargo, bombones, obleas, papas fritas…"
             aria-invalid={Boolean(errorDeCampo("gustos"))}
             aria-describedby={errorDeCampo("gustos") ? "error-gustos" : undefined}
           />
@@ -103,7 +103,7 @@ export function FormularioFicha() {
             id="no_gustos"
             name="no_gustos"
             maxLength={1000}
-            placeholder="Perfumes fuertes, tazas…"
+            placeholder="Regaliz, chicles de menta, dulces de coco…"
             aria-invalid={Boolean(errorDeCampo("no_gustos"))}
             aria-describedby={
               errorDeCampo("no_gustos") ? "error-no-gustos" : undefined

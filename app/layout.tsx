@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Directorio de Amigo Secreto",
+  title: "Directorio de Amigo Dulce",
   description:
     "Fichas anónimas con gustos, lo que no gusta y alergias para acertar con el regalo.",
 };
