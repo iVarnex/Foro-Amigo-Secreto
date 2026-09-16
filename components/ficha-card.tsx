@@ -17,7 +17,7 @@ function resumir(texto: string) {
 
 export function FichaCard({ ficha }: { ficha: FichaEnListado }) {
   return (
-    <Card>
+    <Card className="transition-all duration-150 ease-out hover:-translate-y-0.5 hover:shadow-md hover:ring-foreground/20">
       <CardHeader>
         <CardTitle>
           <Link

@@ -10,7 +10,7 @@ export default function NotFound() {
       <p className="text-muted-foreground">
         Puede que se haya borrado o que el enlace esté mal escrito.
       </p>
-      <Button render={<Link href="/" />} className="self-start">
+      <Button render={<Link href="/" />} nativeButton={false} className="self-start">
         Volver al listado
       </Button>
     </main>

@@ -46,3 +46,8 @@ next-env.d.ts
 AGENTS-2.0/
 AGENTS.md
 CLAUDE.md
+.agents/
+skills-lock.json
+
+.vercel
+.env*

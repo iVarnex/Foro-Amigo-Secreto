@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PlusIcon } from "lucide-react";
 import { FichaCard } from "@/components/ficha-card";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { listarFichas } from "@/db/queries";
 import { LIMITE_FICHAS_POR_PAGINA } from "@/lib/validaciones";
 
@@ -17,13 +18,16 @@ export default async function Home() {
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-1 flex-col gap-6 px-4 py-8">
       <header className="flex flex-col gap-3">
-        <h1 className="font-heading text-2xl font-semibold">
-          🎁 Amigo Secreto
-        </h1>
+        <div className="flex items-start justify-between gap-3">
+          <h1 className="font-heading text-2xl font-semibold">
+            🎁 Amigo Secreto
+          </h1>
+          <ThemeToggle />
+        </div>
         <p className="text-muted-foreground">
           Publica tu ficha para que quien te tocó sepa qué regalarte.
         </p>
-        <Button render={<Link href="/fichas/nueva" />} size="lg">
+        <Button render={<Link href="/fichas/nueva" />} nativeButton={false} size="lg">
           <PlusIcon aria-hidden="true" />
           Crear mi ficha
         </Button>

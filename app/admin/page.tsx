@@ -3,6 +3,7 @@ import { UserButton } from "@clerk/nextjs";
 import { TriangleAlertIcon } from "lucide-react";
 import { PanelModeracion } from "@/components/panel-moderacion";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { listarComentariosParaModeracion, listarFichas } from "@/db/queries";
 import { verificarAccesoAdmin } from "@/lib/auth";
 import { MENSAJE_POR_MOTIVO } from "@/lib/autorizacion-admin";
@@ -22,6 +23,7 @@ function Encabezado({ children }: { children?: React.ReactNode }) {
       </h1>
       <div className="flex items-center gap-3">
         {children}
+        <ThemeToggle />
         <UserButton />
       </div>
     </header>
