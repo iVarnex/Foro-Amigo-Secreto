@@ -1,0 +1,1 @@
+CREATE INDEX "comentarios_creado_en_idx" ON "comentarios" USING btree ("creado_en");
