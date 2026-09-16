@@ -48,6 +48,7 @@ AGENTS.md
 CLAUDE.md
 .agents/
 skills-lock.json
+*-rol.txt
 
 .vercel
 .env*

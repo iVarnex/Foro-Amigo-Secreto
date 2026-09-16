@@ -38,7 +38,7 @@ export default async function Home() {
           Todavía no hay fichas publicadas. Crea la primera.
         </p>
       ) : (
-        <ul className="flex flex-col gap-4">
+        <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           {fichas.map((ficha) => (
             <li key={ficha.id}>
               <FichaCard ficha={ficha} />
