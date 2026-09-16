@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# herramientas y configuracion local de agentes/IA (no se versiona)
+.claude/
+AGENTS-2.0/
+AGENTS.md
+CLAUDE.md

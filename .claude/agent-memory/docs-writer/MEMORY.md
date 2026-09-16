@@ -1,2 +1,0 @@
-- [Convenciones de docs del repo Foro](docs_conventions_foro.md) — voz en español, formato de ADR `docs/adr/000N-slug.md`, sin changelog/license/site generator.
-- [.env.example ilegible en Foro por permisos](permisos_env_example_foro.md) — derivar variables de env de process.env.* y del SDK, no del archivo.
